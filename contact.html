@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infa Air Conditioner - Your trusted partner for all air conditioning needs. We offer installation, repair, and maintenance services. Contact us today!">
+    <meta name="keywords" content="Infa Air Conditioner, AC repair, AC installation, air conditioning services, Indore, Daikin, air conditioner maintenance">
+    <meta name="author" content="Infa Air Conditioner Team">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="your-google-site-verification-code" />
+    <meta name="theme-color" content="#ffffff">
+    
+  <title>Infa Air Conditioner</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- css link -->
+  <link rel="stylesheet" href="assests/css/index1.css">
+  <link rel="stylesheet" href="assests/css/history.css">
+  <link rel="stylesheet" href="assests/css/contact.css"> <!-- Added contact.css for styling the contact form -->
+  <!-- css link -->
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">Infa Air Conditioner</div>
+  
+    <nav class="nav-menu" id="navMenu">
+      <a href="index1.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  
+    <div class="user-menu" id="userMenu">
+      <a href="form/signup.html">Login</a>
+      <a href="index.html">Logout</a>
+    </div>
+  
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+
+    <script>
+        const toggle = document.getElementById("menuToggle");
+        const nav = document.getElementById("navMenu");
+        const user = document.getElementById("userMenu");
+      
+        toggle.addEventListener("click", () => {
+          nav.classList.toggle("active");
+          user.classList.toggle("active");
+        });
+      </script>
+      
+  </header>
+  
+    <!-- Header Section -->
+
+    <!-- Main Content Section -->
+      <!---------Main--------Section-------->
+      <main>
+        <!-- Contact Section -->
+        <section class="contact-section">
+          <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p class="contact-subtitle">Have questions? Get in touch with us directly.</p>
+      
+            <form class="contact-form" action="#" method="POST">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+              </div>
+              <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Write your message..."></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <!-- form backend start server js  -->
+      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+      <script>
+        (function(){
+          emailjs.init("aHO_LbNebSshT8khW"); // Replace with your actual Public Key
+        })();
+      </script>
+            <!-- form backend start server js  -->
+
+            <script>
+                document.querySelector(".contact-form").addEventListener("submit", function(e) {
+                  e.preventDefault(); // Stop form from refreshing
+              
+                  emailjs.sendForm("service_kkxwkf8", "template_nx4wqxw", this)
+                    .then(() => {
+                      alert("Message sent successfully!");
+                      this.reset(); // Clear form
+                    }, (error) => {
+                      alert("Failed to send message. Error: " + JSON.stringify(error));
+                    });
+                });
+              </script>
+              
+
+
+    <!-- Main Content Section -->
+  <!-- Footer Section -->
+ <!---------------Footer---------------Full---Area--------- -->
+ <footer>
+  <!---------------Footer---------------Container-------Area--------- -->
+  <div class="footer-container">
+    <!---------------Footer---------------Coloumn-------Area--------- -->
+    <div class="footer-column">
+      <h3>
+        Our Location
+      </h3>
+      <p>
+        South Tukoganj,<br />
+        59,Trade Center<br />
+        Near Kanchan Bagh,<br />
+        Indore Madhya Pradesh 452001
+      </p>
+      <div class="social-icons">
+        <a href="#"><img src="assests/images/icons/fb-icon.png" alt="Facebook Icon"></a>
+<a href="#"><img src="assests/images/icons/twitter-icon.png" alt="Twitter Icon"></a>
+<a href="#"><img src="assests/images/icons/instagram-icon.png" alt="Instagram Icon"></a>
+<a href="#"><img src="assests/images/icons/youtube-icon.png" alt="YouTube Icon"></a>
+
+      </div>
+    </div>
+    <!---------------Footer---------------Coloumn-------Area--------- -->
+    <div class="footer-column">
+      <h4>SERVICE FOR</h4>
+      <ul>
+        <li><a href="#">Air Conditioner Repair</a></li>
+        <li><a href="#">Service Center</a></li>
+        <li><a href="#">Warranty Check</a></li>
+        <li><a href="#">Repair Status</a></li>
+      </ul>
+    </div>
+    <!---------------Footer---------------Coloumn-------Area--------- -->
+    <div class="footer-column">
+      <h4>Daikin Contact</h4>
+      <p>Toll-Free: 1800-102-9300</p>
+      <p>WhatsApp: +91 9310423141</p>
+      <p>Email: <a href="mailto:service.customerservice@daikinindia.com">service.customerservice@daikinindia.com</a>
+      </p>
+    </div>
+    <!---------------Footer---------------Coloumn-------Area--------- -->
+    <div class="footer-column">
+      <h4>Service Center "Infa Air Conditioner"</h4>
+      <p>Landline: 07314904491</p>
+      <p>WhatsApp: +919713995804</p>
+      <p>Email: <a href="mailto:infaairconditioning59@gmail.com">infaairconditioning59@gmail.com</a></p>
+    </div>
+  </div>
+  <!---------------Footer---------------Coloumn-------Area--------- -->
+  <!---------------Footer---------------Copyright-------Area--------- -->
+  <div class="footer-bottom">
+    <p>
+      Privacy Policy | Terms of Use | Copyright © 2025 <span>Infa Air Conditioner</span> Inc. All Rights Reserved.
+    </p>
+    <div class="country">
+      <span>India</span>
+    </div>
+  </div>
+  <!---------------Footer---------------Copyright-------Area--------- -->
+</footer>
+  
+    <!-- Footer Section -->
+     <!-- javaScript Code link -->
+  <script src="assests/js/headertoggle.js"></script>
+
+  
+  <!-- javaScript Code link -->
+</body>
+</html>

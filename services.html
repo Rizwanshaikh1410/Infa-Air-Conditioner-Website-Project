@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infa Air Conditioner</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="assests/css/index1.css" />
+    <link rel="stylesheet" href="assests/css/services.css" />
+    <!-- css link -->
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="logo">Infa Air Conditioner</div>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index1.html">Home</a>
+        <a href="#our-services">Services</a>
+        <a href="product.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="user-menu" id="userMenu">
+        <a href="form/signup.html">Login</a>
+        <a href="index.html">Logout</a>
+      </div>
+
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+
+      <script>
+        const toggle = document.getElementById("menuToggle");
+        const nav = document.getElementById("navMenu");
+        const user = document.getElementById("userMenu");
+
+        toggle.addEventListener("click", () => {
+          nav.classList.toggle("active");
+          user.classList.toggle("active");
+        });
+      </script>
+    </header>
+
+    <!-- Header Section -->
+
+    <main>
+      <!------------------Services------------ -->
+      <div class="our-services">
+        <h1>Our Services</h1>
+        <p>
+          Dedicated AC service provider in India offering on-time AC repair, AC
+          routine, and maintenance services at all PIN Codes in India. Hire us
+          to get expert AC service.
+        </p>
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card">
+            <div class="card-header">
+              <img
+                src="assests/ac-images/Services/routing-ac.webp"
+                alt="Routine Service"
+              />
+              <h3>Routine Service (Window AC)</h3>
+            </div>
+            <ul>
+              <li>Deep Cleaning of AC for fresh air</li>
+              <li>Filter, coils etc. cleaned with water</li>
+              <li>Checks the elements properly</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">₹ 499/-</span>
+              <span class="tnc">*T&C Apply</span>
+              <button class="book-now">
+                <a href="tel:9770274616" id="diallink">Book Now</a>
+              </button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="service-card">
+            <div class="card-header">
+              <img
+                src="assests/ac-images/services/routing-ac-one.webp"
+                alt="Routine Service"
+              />
+              <h3>Routine Service (Split AC)</h3>
+            </div>
+            <ul>
+              <li>Deep Cleaning of AC for fresh air</li>
+              <li>Filter, coils etc. cleaned with water</li>
+              <li>Checks the elements properly</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">₹ 599/-</span>
+              <span class="tnc">*T&C Apply</span>
+              <button class="book-now">
+                <a href="tel:9770274616" id="diallink">Book Now</a>
+              </button>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="service-card">
+            <div class="card-header">
+              <img
+                src="assests/ac-images/services/z-service.webp"
+                alt="Z-Service"
+              />
+              <h3>Routine Jet-Service (Split AC)</h3>
+            </div>
+            <ul>
+              <li>Deep Cleaning of AC for fresh air</li>
+              <li>Filter, coils etc. cleaned with water</li>
+              <li>Checks the performance of the air conditioner</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">₹ 999/-</span>
+              <span class="tnc">*T&C Apply</span>
+              <button class="book-now">
+                <a href="tel:9770274616" id="diallink">Book Now</a>
+              </button>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="service-card">
+            <div class="card-header">
+              <img
+                src="assests/ac-images/services/re.webp"
+                alt="Repair Service"
+              />
+              <h3>Repair Service (Window AC)</h3>
+            </div>
+            <ul>
+              <li>Checks the elements properly</li>
+              <li>Checks all the wears and tears of the wires</li>
+              <li>Checks the performance of the air conditioner</li>
+              <li>Troubleshoots the problem in an efficient manner</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">₹ 499/-</span>
+              <span class="tnc">*T&C Apply</span>
+              <button class="book-now">
+                <a href="tel:9770274616" id="diallink">Book Now</a>
+              </button>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="service-card">
+            <div class="card-header">
+              <img
+                src="assests/ac-images/services/ree.webp"
+                alt="Split-Repair"
+              />
+              <h3>Repair Service (Split AC)</h3>
+            </div>
+            <ul>
+              <li>Checks the elements properly</li>
+              <li>Checks all the wears and tears of the wires</li>
+              <li>Checks the performance of the air conditioner</li>
+              <li>Troubleshoots the problem in an efficient manner</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">₹ 599/-</span>
+              <span class="tnc">*T&C Apply</span>
+              <button class="book-now">
+                <a href="tel:9770274616" id="diallink">Book Now</a>
+              </button>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="service-card">
+            <div class="card-header">
+              <img
+                src="assests/ac-images/services/intalationss.webp"
+                alt="Window AC Installation"
+              />
+              <h3>Installation (Window AC)</h3>
+            </div>
+            <ul>
+              <li>Include Fixing of AC stand in Windows</li>
+              <li>Connect inlet AC assembly to Air Conditioner</li>
+              <li>Connect electricity supply to Air Conditioner</li>
+              <li>Check Window AC functions after installation</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">₹ 549/-</span>
+              <span class="tnc">*T&C Apply</span>
+              <button class="book-now">
+                <a href="tel:9770274616" id="diallink">Book Now</a>
+              </button>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="service-card">
+            <div class="card-header">
+              <img
+                src="assests/ac-images/services/windown-ac-un.webp"
+                alt="Uninstall-Window-Ac"
+              />
+              <h3>Uninstallation (Window AC)</h3>
+            </div>
+            <ul>
+              <li>Dismantle of Air Conditioner from Window</li>
+              <li>Dismantle of inlet AC assembly form Air Conditioner</li>
+              <li>Disconnect electricity supply to Air Conditioner</li>
+              <li>Pack Air Conditioner at place</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">₹ 399/-</span>
+              <span class="tnc">*T&C Apply</span>
+              <button class="book-now">
+                <a href="tel:9770274616" id="diallink">Book Now</a>
+              </button>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="service-card">
+            <div class="card-header">
+              <img
+                src="assests/ac-images/services/installation-split.webp"
+                alt="Split Ac Installation"
+              />
+              <h3>Installation (Split AC)</h3>
+            </div>
+            <ul>
+              <li>Include Fixing of Air Conditioner stand on wall</li>
+              <li>Connect inlet AC assembly to Air Conditioner</li>
+              <li>Connect electricity supply to Air Conditioner</li>
+              <li>Check Split AC functions after installation</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">₹ 1399/-</span>
+              <span class="tnc">*T&C Apply</span>
+              <button class="book-now">
+                <a href="tel:9770274616" id="diallink">Book Now</a>
+              </button>
+            </div>
+          </div>
+          <!-- Card 9 -->
+          <div class="service-card">
+            <div class="card-header">
+              <img
+                src="assests/ac-images/services/split-un.webp"
+                alt="Split-Uninstall"
+              />
+              <h3>Uninstallation (Split AC)</h3>
+            </div>
+            <ul>
+              <li>Dismantle of AC stand from Windows</li>
+              <li>Dismantle/Fixed Front air grill</li>
+              <li>Disconnect electricity supply to Air Conditioner</li>
+              <li>Pack Air Conditioner at place</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">₹ 799/-</span>
+              <span class="tnc">*T&C Apply</span>
+              <button class="book-now">
+                <a href="tel:9770274616" id="diallink">Book Now</a>
+              </button>
+            </div>
+          </div>
+          <!-- Add more cards similarly -->
+        </div>
+      </div>
+      <div class="safety-check">
+        <h1>Best-in-class safety measures</h1>
+        <div class="safety-container">
+          <!-- Safety Item 1 -->
+          <div class="safety-item">
+            <div class="icon-circle blue">
+              <img
+                src="assests/ac-images/safety/masks.webp"
+                alt="Masks & Gloves"
+              />
+            </div>
+            <p>Usage of masks & gloves</p>
+          </div>
+          <!-- Safety Item 2 -->
+          <div class="safety-item">
+            <div class="icon-circle red">
+              <img
+                src="assests/ac-images/safety/tempreture.webp"
+                alt="Temperature Checks"
+              />
+            </div>
+            <p>Temperature checks</p>
+          </div>
+          <!-- Safety Item 3 -->
+          <div class="safety-item">
+            <div class="icon-circle blue">
+              <img
+                src="assests/ac-images/safety/sanitization.webp"
+                alt="Sanitization"
+              />
+            </div>
+            <p>Sanitization of tools & area</p>
+          </div>
+        </div>
+      </div>
+      <div class="certification">
+        <h1>Certification</h1>
+        <hr />
+        <div class="certificated-logo">
+          <div class="certificate">
+            <img src="assests/ac-images/Certification/cum.webp" alt="Cum" />
+          </div>
+          <div class="certificate">
+            <img src="assests/ac-images/Certification/td.webp" alt="TD" />
+          </div>
+          <div class="certificate">
+            <img src="assests/ac-images/Certification/iso.webp" alt="Iso" />
+          </div>
+        </div>
+      </div>
+
+      <!------------------Services------------ -->
+    </main>
+    <!-- Footer Section -->
+    <!---------------Footer---------------Full---Area--------- -->
+    <footer>
+      <!---------------Footer---------------Container-------Area--------- -->
+      <div class="footer-container">
+        <!---------------Footer---------------Coloumn-------Area--------- -->
+        <div class="footer-column">
+          <h3>Our Location</h3>
+          <p>
+            South Tukoganj,<br />
+            59,Trade Center<br />
+            Near Kanchan Bagh,<br />
+            Indore Madhya Pradesh 452001
+          </p>
+          <div class="social-icons">
+            <a href="#"
+              ><img src="assests/images/icons/fb-icon.png" alt="Facebook Icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="assests/images/icons/twitter-icon.png"
+                alt="Twitter Icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="assests/images/icons/instagram-icon.png"
+                alt="Instagram Icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="assests/images/icons/youtube-icon.png"
+                alt="YouTube Icon"
+            /></a>
+          </div>
+        </div>
+        <!---------------Footer---------------Coloumn-------Area--------- -->
+        <div class="footer-column">
+          <h4>SERVICE FOR</h4>
+          <ul>
+            <li><a href="#">Air Conditioner Repair</a></li>
+            <li><a href="#">Service Center</a></li>
+            <li><a href="#">Warranty Check</a></li>
+            <li><a href="#">Repair Status</a></li>
+          </ul>
+        </div>
+        <!---------------Footer---------------Coloumn-------Area--------- -->
+        <div class="footer-column">
+          <h4>Daikin Contact</h4>
+          <p>Toll-Free: 1800-102-9300</p>
+          <p>WhatsApp: +91 9310423141</p>
+          <p>
+            Email:
+            <a href="mailto:service.customerservice@daikinindia.com"
+              >service.customerservice@daikinindia.com</a
+            >
+          </p>
+        </div>
+        <!---------------Footer---------------Coloumn-------Area--------- -->
+        <div class="footer-column">
+          <h4>Service Center "Infa Air Conditioner"</h4>
+          <p>Landline: 07314904491</p>
+          <p>WhatsApp: +919713995804</p>
+          <p>
+            Email:
+            <a href="mailto:infaairconditioning59@gmail.com"
+              >infaairconditioning59@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <!---------------Footer---------------Coloumn-------Area--------- -->
+      <!---------------Footer---------------Copyright-------Area--------- -->
+      <div class="footer-bottom">
+        <p>
+          Privacy Policy | Terms of Use | Copyright © 2025
+          <span>Infa Air Conditioner</span> Inc. All Rights Reserved.
+        </p>
+        <div class="country">
+          <span>India</span>
+        </div>
+      </div>
+      <!---------------Footer---------------Copyright-------Area--------- -->
+    </footer>
+
+    <!-- Footer Section -->
+    <!-- javaScript Code link -->
+    <script src="assests/js/headertoggle.js"></script>
+
+    <!-- javaScript Code link -->
+  </body>
+</html>

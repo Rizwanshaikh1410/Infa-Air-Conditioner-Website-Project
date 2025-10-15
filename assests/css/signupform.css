@@ -1,0 +1,92 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #3a3a3a, #707070);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .page {
+    display: none;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .page.active {
+    display: block;
+  }
+  
+  .form-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    color: #fff;
+  }
+  
+  .form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+  }
+  
+  form input::placeholder {
+    color: #ccc;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #4a4a4a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #616161;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 10px;
+    color: #ccc;
+  }
+  
+  p span {
+    color: #00bcd4;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 500px) {
+    .form-container {
+      padding: 20px;
+    }
+  
+    form input, form button {
+      font-size: 14px;
+    }
+  }
+  
